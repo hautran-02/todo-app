@@ -1,0 +1,18 @@
+<mat-drawer-container class="example-container" autosize>
+  <header>
+    <h1 class="fw-bold">{{ "Todo app" | uppercase }}</h1>
+  </header>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side"
+    ><app-sidebar />
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+  <footer>
+    <h2>Angular Learn</h2>
+  </footer>
+</mat-drawer-container>
