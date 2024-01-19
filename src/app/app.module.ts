@@ -35,6 +35,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatFormFieldModule
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
