@@ -1,4 +1,4 @@
-<mat-drawer-container class="example-container" autosize>
+<div class="example-container">
   <header>
     <mat-toolbar>
       <button
@@ -29,14 +29,15 @@
     </mat-toolbar>
   </header>
 
-  <mat-drawer #drawer class="example-sidenav" mode="side"
-    ><app-sidebar />
-  </mat-drawer>
-  <div class="example-sidenav-content">
-    <app-pages />
-  </div>
+  <mat-drawer-container class="main-layout" autosize>
+    <mat-drawer #drawer id="sidebar" mode="side">asdfasd</mat-drawer>
 
-  <footer>
-    <h2>Angular Learn</h2>
-  </footer>
-</mat-drawer-container>
+    <div id="layout-content">
+      <app-pages />
+    </div>
+
+    <footer>
+      <p>Angular Learn</p>
+    </footer>
+  </mat-drawer-container>
+</div>

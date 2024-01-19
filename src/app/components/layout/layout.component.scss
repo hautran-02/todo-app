@@ -1,66 +1,56 @@
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100px;
-  
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-
 .example-container {
-  width: 100vw;
-  height: 100vh;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.example-sidenav-content {
   display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
+  flex-direction: column;
+  height: 100vh;
 
-.example-sidenav {
-  padding: 20px;
-}
-/* Style the footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 3;
+
+    .example-spacer {
+      flex: 1 1 auto;
+    }
+  }
+
+  .example-sidenav {
+  }
+
+  .main-layout {
+    margin-top: 80px;
+    flex: 1;
+
+    #sidebar {
+
+    }
+
+    #layout-content {
+      padding: 16px 32px;
+    }
+
+  }
+
+  /* Style the footer */
+  footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    height: 40px;
+  }
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */

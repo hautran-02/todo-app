@@ -14,6 +14,9 @@ import { TodoPageComponent } from './components/pages/todo-page/todo-page.compon
 import { PagesComponent } from './components/pages/pages.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +31,10 @@ import { MatIconModule } from '@angular/material/icon';
     AppRoutingModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatIconModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
